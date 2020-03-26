@@ -66,7 +66,7 @@ export default function App() {
       {/* Password */}
       <Text style={styles.subTitleText} >Password</Text>
       <View style={styles.viewContrainer}>
-        <View style={styles.viewContrainer}>
+        <View style={styles.subViewContainer}>
           <TextInput
             style={styles.textInputStyle}
             onChangeText={(text) => setPassword(text)}
@@ -80,7 +80,7 @@ export default function App() {
       {/* Type Password Again */}
       <Text style={styles.subTitleText} >Type Password again</Text>
       <View style={styles.viewContrainer}>
-        <View style={styles.viewContrainer}>
+        <View style={styles.subViewContainer}>
           <TextInput
             style={styles.textInputStyle}
             onChangeText={(text) => setRePassword(text)}
@@ -96,17 +96,6 @@ export default function App() {
           </Text>
         </View>
       </View>
-
-      {/* <View style={styles.buttonView}>
-        <Button
-          title={'送出'}
-          onPress={() => checkPassword()}
-          color='green'
-        />
-      </View> */}
-
-
-
     </View>
   );
 }
